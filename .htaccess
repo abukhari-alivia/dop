@@ -1,0 +1,7 @@
+# Redirect rules for Hop
+RewriteEngine on
+RewriteBase "/"
+
+# Redirect /manual/2.9.0 to latest
+
+RewriteRule "^manual/2.9.0(/.*)$" "/manual/latest$1" [R=permanent,L]
